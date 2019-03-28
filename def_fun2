@@ -7,3 +7,13 @@ p2(math.pi)
 p2('I created pruce. '*3)
 drew = 'mandate of something? '
 p2 ('hey drew, '+ drew)
+
+def add2(a, b):
+    added = a + b
+    return added
+
+x = add2(3, 5)
+print(x)
+
+y = add2 ('hello weird, ','what is going on?')
+print(y)
