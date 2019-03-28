@@ -1,0 +1,10 @@
+inp_h = input('Enter hour: \n')
+inp_r = input('Enter rate: \n')
+h = float(inp_h)
+r = float(inp_r)
+if h <= 40 and h >= 0 :
+    p = r * h
+    print ('Your pay is $',p)
+elif h > 40 and h <= 80 :
+    p = 40 * r + (h - 40)*r*1.5
+    print ('Your pay is $',p)
