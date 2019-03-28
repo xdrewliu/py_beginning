@@ -1,0 +1,11 @@
+x=input('give me a number: \n')
+try:
+    y=float(x)
+    if y>0:
+        print ('this is a positive number')
+    elif y<0:
+        print('this is a negative number')
+    else:
+        print('this is zero')
+except:
+    print ("hey, this ain't right. Please enter a number: \n")
