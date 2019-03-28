@@ -5,3 +5,5 @@ def p2 (pruce):
     print(pruce)
 p2(math.pi)
 p2('I created pruce. '*3)
+drew = 'mandate of something? '
+p2 ('hey drew, '+ drew)
