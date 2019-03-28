@@ -1,0 +1,7 @@
+import math
+def p2 (pruce):
+    print(pruce)
+    print(pruce)
+    print(pruce)
+p2(math.pi)
+p2('I created pruce. '*3)
