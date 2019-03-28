@@ -1,0 +1,23 @@
+def p (h,r):
+    if h <= 40 and h >= 0 :
+        p = r * h
+        print ('Your pay is $',p)
+    elif h > 40 :
+        p = 40 * r + (h - 40)*r*1.5
+        print ('Your pay is $',p)
+
+inp_h = input('Enter hour: \n')
+try:
+    h = float(inp_h)
+except:
+    print('Error, please enter a numerical number for hour.') 
+    
+inp_r = input('Enter rate: \n')
+try:
+    r = float(inp_r)
+except:
+    print('Error, please enter a numerical number for rate.')
+try:  
+    p (h,r)
+except:
+    print ('Sorry, you have to do it again!')
