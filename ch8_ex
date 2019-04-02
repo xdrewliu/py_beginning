@@ -1,0 +1,10 @@
+x=[1,2,3]
+y=['a','b','c','hahaha']
+x.append(4)
+y.extend(x)
+z=x+y
+z1=z*2
+print(max(z))
+print(min(z))
+print (z)
+
