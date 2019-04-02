@@ -1,0 +1,19 @@
+inp = input('enter file name: ')
+try:
+    fh = open(inp)
+except: 
+    print(inp, 'not found')
+    exit()
+count = 0
+total = 0
+for line in fh:
+    line = line.strip()
+    if line.find('X-DSPAM-Confidence:') ==-1: continue
+    count = count + 1
+    num = float(line[-6:])
+    total = total + num
+    print (line)
+    print (num)
+    
+
+print(count,'lines.','Average spam confidence: ',total/count)
